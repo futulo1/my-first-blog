@@ -1,0 +1,10 @@
+{% extends "home.html" %}
+<body>
+{% block content %}
+{%for i in users %}
+<a href ="http://localhost:8000/members/{{ i.pk }}"> {{ i.users.username }} </a>
+<br>
+{% endfor %}
+{% endblock %}
+</body>
+</html>
